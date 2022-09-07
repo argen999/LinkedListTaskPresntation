@@ -65,7 +65,23 @@ public class Main {
 //            System.out.println(a.getName());
 //        }
         System.out.println("Эми сорттолушу: Биринчи мышыктар, Экинчи иттер, Учунчу чычкандар!");
-
+        LinkedList<Animal> list = new LinkedList<>();
+        for (int i = 0; i < arrayList.size(); i++) {
+            if (arrayList.get(i) instanceof Cat) {
+                list.add(arrayList.get(i));
+            }
+        }for (int i = 0; i < arrayList.size(); i++) {
+            if (arrayList.get(i) instanceof Dog) {
+                list.add(arrayList.get(i));
+            }
+        }for (int i = 0; i < arrayList.size(); i++) {
+            if (arrayList.get(i) instanceof Mouse) {
+                list.add(arrayList.get(i));
+            }
+        }
+        for (Animal a:list) {
+            System.out.println(a.getName() );
+        }
     }
 
     
